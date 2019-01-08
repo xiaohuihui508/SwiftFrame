@@ -1,0 +1,6 @@
+framework module Pods_RTOSS {
+  umbrella header "Pods-RTOSS-umbrella.h"
+
+  export *
+  module * { export * }
+}
