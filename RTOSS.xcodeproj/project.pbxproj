@@ -14,7 +14,8 @@
 		C1044EF121E58E9000BA6A04 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EF021E58E9000BA6A04 /* MessageVC.swift */; };
 		C1044EF321E591E700BA6A04 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EF221E591E600BA6A04 /* PersonalDataVC.swift */; };
 		C1044EF521E596E800BA6A04 /* RTBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EF421E596E800BA6A04 /* RTBaseNavigationController.swift */; };
-		C1044EFA21E5C5CD00BA6A04 /* MessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EF921E5C5CD00BA6A04 /* MessageViewCell.swift */; };
+		C1044EFC21E5C88000BA6A04 /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EFB21E5C88000BA6A04 /* MessageCollectionViewCell.swift */; };
+		C1044EFE21E5D0A500BA6A04 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EFD21E5D0A500BA6A04 /* MessageModel.swift */; };
 		C19FCC8C21E49D7D0010C1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19FCC8A21E49D7D0010C1AB /* Main.storyboard */; };
 		C19FCC8E21E49D800010C1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19FCC8D21E49D800010C1AB /* Assets.xcassets */; };
 		C19FCC9121E49D800010C1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19FCC8F21E49D800010C1AB /* LaunchScreen.storyboard */; };
@@ -67,7 +68,8 @@
 		C1044EF021E58E9000BA6A04 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		C1044EF221E591E600BA6A04 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
 		C1044EF421E596E800BA6A04 /* RTBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTBaseNavigationController.swift; sourceTree = "<group>"; };
-		C1044EF921E5C5CD00BA6A04 /* MessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewCell.swift; sourceTree = "<group>"; };
+		C1044EFB21E5C88000BA6A04 /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1044EFD21E5D0A500BA6A04 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		C19FCC8321E49D7D0010C1AB /* RTOSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTOSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19FCC8B21E49D7D0010C1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C19FCC8D21E49D800010C1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		C1044EED21E58D3A00BA6A04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C1044EFD21E5D0A500BA6A04 /* MessageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,7 +185,7 @@
 		C1044EEF21E58D3A00BA6A04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C1044EF921E5C5CD00BA6A04 /* MessageViewCell.swift */,
+				C1044EFB21E5C88000BA6A04 /* MessageCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -629,16 +632,17 @@
 				C19FCCD321E49E480010C1AB /* RxAlamofireObjectMapper.swift in Sources */,
 				C1044EF521E596E800BA6A04 /* RTBaseNavigationController.swift in Sources */,
 				C19FCCD821E49E480010C1AB /* HomeVC.swift in Sources */,
+				C1044EFC21E5C88000BA6A04 /* MessageCollectionViewCell.swift in Sources */,
 				C19FCCD621E49E480010C1AB /* RTTabController.swift in Sources */,
 				C19FCCCF21E49E480010C1AB /* RTAppMacroRequest.swift in Sources */,
 				C19FCCD721E49E480010C1AB /* AppDelegate.swift in Sources */,
 				C19FCCD421E49E480010C1AB /* RxResult.swift in Sources */,
 				C19FCCD121E49E480010C1AB /* AppMacro.swift in Sources */,
 				C19FCCD221E49E480010C1AB /* RTNetwork.swift in Sources */,
-				C1044EFA21E5C5CD00BA6A04 /* MessageViewCell.swift in Sources */,
 				C19FCCDA21E49E480010C1AB /* YFNewsModel.swift in Sources */,
 				C19FCCD021E49E480010C1AB /* AppConfig.swift in Sources */,
 				C1044EEB21E57E2100BA6A04 /* MineHeaderView.swift in Sources */,
+				C1044EFE21E5D0A500BA6A04 /* MessageModel.swift in Sources */,
 				C1044EF121E58E9000BA6A04 /* MessageVC.swift in Sources */,
 				C1044EE921E57E0E00BA6A04 /* MineViewCell.swift in Sources */,
 				C19FCCD521E49E480010C1AB /* RTNetworkDarcy.swift in Sources */,
