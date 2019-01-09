@@ -86,10 +86,7 @@ extension RTNetwork {
     fileprivate func urlHandle(_ url: String) -> String {
         var urlString = url
         if !url.hasPrefix("http") {
-            
             urlString = N_HostSiteMain + url
-            
-            
         }
         
         return urlString
@@ -107,7 +104,7 @@ extension RTNetwork {
         return newParams
     }
     
-    /// 返回结果处理
+    /// 返回结果处理 
     ///
     /// - Parameter response: 原始的返回结果
     /// - Returns: 处理之后的返回结果

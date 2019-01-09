@@ -16,13 +16,13 @@ class RTTabController: UITabBarController {
         // Do any additional setup after loading the view.
         //配置主控制器
         let vc1 = HomeVC()
-        self.addChildViewController(childerVC: vc1, title: "首页", normalImg: "", selectedImg: "")
+        self.addChildViewController(childerVC: vc1, title: "首页", normalImg: "tabbar_area_normal", selectedImg: "tabbar_area_select")
         
         let vc2 = DeviceVC()
-         self.addChildViewController(childerVC: vc2, title: "设备", normalImg: "", selectedImg: "")
+         self.addChildViewController(childerVC: vc2, title: "设备", normalImg: "tabbar_device_normal", selectedImg: "tabbar_device_select")
         
         let vc3 = MineVC()
-         self.addChildViewController(childerVC: vc3, title: "我的", normalImg: "", selectedImg: "")
+         self.addChildViewController(childerVC: vc3, title: "我的", normalImg: "tabbar_mine_normal", selectedImg: "tabbar_mine_select")
         
         self.selectedIndex = 0
         
@@ -43,7 +43,7 @@ class RTTabController: UITabBarController {
 
         let tabItem = UITabBarItem(title: title as String, image: norImg, selectedImage: selImg)
 
-        let naVc = UINavigationController()
+        let naVc = RTBaseNavigationController()
         
         naVc.tabBarItem = tabItem
         

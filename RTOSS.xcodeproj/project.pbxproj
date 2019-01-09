@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		12003EDC0ED417FEE561C6A6 /* Pods_RTOSS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCD89162A1AC681656DADDA /* Pods_RTOSS.framework */; };
 		8A4EA1D1A2808A00AF98E22A /* Pods_RTOSSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919B8374636416A2A7429EC4 /* Pods_RTOSSUITests.framework */; };
+		C1044EE921E57E0E00BA6A04 /* MineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EE821E57E0E00BA6A04 /* MineViewCell.swift */; };
+		C1044EEB21E57E2100BA6A04 /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EEA21E57E2100BA6A04 /* MineHeaderView.swift */; };
+		C1044EF121E58E9000BA6A04 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EF021E58E9000BA6A04 /* MessageVC.swift */; };
+		C1044EF321E591E700BA6A04 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EF221E591E600BA6A04 /* PersonalDataVC.swift */; };
+		C1044EF521E596E800BA6A04 /* RTBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EF421E596E800BA6A04 /* RTBaseNavigationController.swift */; };
 		C19FCC8C21E49D7D0010C1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19FCC8A21E49D7D0010C1AB /* Main.storyboard */; };
 		C19FCC8E21E49D800010C1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19FCC8D21E49D800010C1AB /* Assets.xcassets */; };
 		C19FCC9121E49D800010C1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19FCC8F21E49D800010C1AB /* LaunchScreen.storyboard */; };
@@ -56,6 +61,11 @@
 		67400150E87FBE81E321E62E /* Pods-RTOSSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTOSSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTOSSTests/Pods-RTOSSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A21D36EF28CE1284F34973E /* Pods-RTOSSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTOSSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTOSSUITests/Pods-RTOSSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		919B8374636416A2A7429EC4 /* Pods_RTOSSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTOSSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1044EE821E57E0E00BA6A04 /* MineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewCell.swift; sourceTree = "<group>"; };
+		C1044EEA21E57E2100BA6A04 /* MineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
+		C1044EF021E58E9000BA6A04 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		C1044EF221E591E600BA6A04 /* PersonalDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
+		C1044EF421E596E800BA6A04 /* RTBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTBaseNavigationController.swift; sourceTree = "<group>"; };
 		C19FCC8321E49D7D0010C1AB /* RTOSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTOSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19FCC8B21E49D7D0010C1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C19FCC8D21E49D800010C1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +134,54 @@
 				FAB2510BD3A39D677A73AEFF /* Pods-RTOSSUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1044EE621E57DB700BA6A04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1044EE721E57DBE00BA6A04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1044EE821E57E0E00BA6A04 /* MineViewCell.swift */,
+				C1044EEA21E57E2100BA6A04 /* MineHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C1044EEC21E58D3A00BA6A04 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				C1044EED21E58D3A00BA6A04 /* Models */,
+				C1044EEE21E58D3A00BA6A04 /* Controllers */,
+				C1044EEF21E58D3A00BA6A04 /* Views */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		C1044EED21E58D3A00BA6A04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1044EEE21E58D3A00BA6A04 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1044EF021E58E9000BA6A04 /* MessageVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C1044EEF21E58D3A00BA6A04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C19FCC7A21E49D7D0010C1AB = {
@@ -207,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				C19FCCBE21E49E480010C1AB /* RTTabController.swift */,
+				C1044EF421E596E800BA6A04 /* RTBaseNavigationController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -222,6 +281,7 @@
 		C19FCCC121E49E480010C1AB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C1044EEC21E58D3A00BA6A04 /* Message */,
 				C19FCCC221E49E480010C1AB /* Home */,
 				C19FCCC521E49E480010C1AB /* Mine */,
 				C19FCCC821E49E480010C1AB /* Device */,
@@ -248,6 +308,8 @@
 		C19FCCC521E49E480010C1AB /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				C1044EE721E57DBE00BA6A04 /* Views */,
+				C1044EE621E57DB700BA6A04 /* Models */,
 				C19FCCC621E49E480010C1AB /* Controllers */,
 			);
 			path = Mine;
@@ -257,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				C19FCCC721E49E480010C1AB /* MineVC.swift */,
+				C1044EF221E591E600BA6A04 /* PersonalDataVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -557,9 +620,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1044EF321E591E700BA6A04 /* PersonalDataVC.swift in Sources */,
 				C19FCCD921E49E480010C1AB /* MineVC.swift in Sources */,
 				C19FCCDB21E49E480010C1AB /* DeviceVC.swift in Sources */,
 				C19FCCD321E49E480010C1AB /* RxAlamofireObjectMapper.swift in Sources */,
+				C1044EF521E596E800BA6A04 /* RTBaseNavigationController.swift in Sources */,
 				C19FCCD821E49E480010C1AB /* HomeVC.swift in Sources */,
 				C19FCCD621E49E480010C1AB /* RTTabController.swift in Sources */,
 				C19FCCCF21E49E480010C1AB /* RTAppMacroRequest.swift in Sources */,
@@ -569,6 +634,9 @@
 				C19FCCD221E49E480010C1AB /* RTNetwork.swift in Sources */,
 				C19FCCDA21E49E480010C1AB /* YFNewsModel.swift in Sources */,
 				C19FCCD021E49E480010C1AB /* AppConfig.swift in Sources */,
+				C1044EEB21E57E2100BA6A04 /* MineHeaderView.swift in Sources */,
+				C1044EF121E58E9000BA6A04 /* MessageVC.swift in Sources */,
+				C1044EE921E57E0E00BA6A04 /* MineViewCell.swift in Sources */,
 				C19FCCD521E49E480010C1AB /* RTNetworkDarcy.swift in Sources */,
 				C19FCCDC21E49E480010C1AB /* YFNewsCell.swift in Sources */,
 			);
