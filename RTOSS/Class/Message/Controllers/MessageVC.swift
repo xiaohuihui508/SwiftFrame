@@ -30,7 +30,9 @@ class MessageVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        self.tabBarController?.tabBar.isHidden = true
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +74,13 @@ extension MessageVC : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MessageCollectionViewCell.cellIdentifier, for: indexPath) as! MessageCollectionViewCell
         let model = tagArray[indexPath.item]
         cell.config(model:model)
+        
+        cell.lookView.tapHandle { [weak self]() -> String in
+            let vc = MessageDetailVC()
+            self?.navigationController?.pushViewController(vc, animated: true)
+            return "点击查看详情"
+        }
+        
         return cell
     }
 }

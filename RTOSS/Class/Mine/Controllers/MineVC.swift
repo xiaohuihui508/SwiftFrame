@@ -26,13 +26,16 @@ class MineVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setUI()
+        
     }
 
 }
@@ -47,6 +50,14 @@ extension MineVC {
         
         let headerView = MineHeaderView.init(frame: CGRect(x: 0, y: 0, width: mScreenWidth, height: mScreenWidth*0.42))
         tableView.tableHeaderView = headerView
+        headerView.tapHandle { [weak self]() -> String in
+            
+            let vc = PersonalDataVC()
+            self?.navigationController?.pushViewController(vc, animated: true)
+            
+            return "点击头部"
+        }
+       
         
     }
 }

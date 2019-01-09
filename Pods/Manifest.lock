@@ -3,7 +3,9 @@ PODS:
   - Differentiator (3.1.0)
   - Hue (3.0.1)
   - Kingfisher (4.10.1)
+  - Masonry (1.1.0)
   - ObjectMapper (3.4.2)
+  - ReactiveObjC (3.1.0)
   - RxAlamofire (4.3.0):
     - RxAlamofire/Core (= 4.3.0)
   - RxAlamofire/Core (4.3.0):
@@ -29,7 +31,9 @@ DEPENDENCIES:
   - Alamofire
   - Hue
   - Kingfisher
+  - Masonry
   - ObjectMapper
+  - ReactiveObjC
   - RxAlamofire
   - RxCocoa
   - RxDataSources
@@ -45,7 +49,9 @@ SPEC REPOS:
     - Differentiator
     - Hue
     - Kingfisher
+    - Masonry
     - ObjectMapper
+    - ReactiveObjC
     - RxAlamofire
     - RxAtomic
     - RxCocoa
@@ -61,7 +67,9 @@ SPEC CHECKSUMS:
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Hue: 93e852fa6211ab35922ad8c293f51c43d6c79eb2
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
@@ -72,6 +80,6 @@ SPEC CHECKSUMS:
   SwiftDate: f4aea5fa9dee812485f34041121a4cbde01b0dee
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 73d0c86ebe7f718ef42809adeafd563f27958725
+PODFILE CHECKSUM: 3a059f40b4475c626ae51032fc9792b52e0eecb6
 
 COCOAPODS: 1.5.3

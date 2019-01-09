@@ -16,6 +16,8 @@
 		C1044EF521E596E800BA6A04 /* RTBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EF421E596E800BA6A04 /* RTBaseNavigationController.swift */; };
 		C1044EFC21E5C88000BA6A04 /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EFB21E5C88000BA6A04 /* MessageCollectionViewCell.swift */; };
 		C1044EFE21E5D0A500BA6A04 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044EFD21E5D0A500BA6A04 /* MessageModel.swift */; };
+		C1044F0521E5E23500BA6A04 /* UIView+ESTap.m in Sources */ = {isa = PBXBuildFile; fileRef = C1044F0421E5E23500BA6A04 /* UIView+ESTap.m */; };
+		C1044F0721E5E87700BA6A04 /* MessageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1044F0621E5E87700BA6A04 /* MessageDetailVC.swift */; };
 		C19FCC8C21E49D7D0010C1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19FCC8A21E49D7D0010C1AB /* Main.storyboard */; };
 		C19FCC8E21E49D800010C1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19FCC8D21E49D800010C1AB /* Assets.xcassets */; };
 		C19FCC9121E49D800010C1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19FCC8F21E49D800010C1AB /* LaunchScreen.storyboard */; };
@@ -70,6 +72,11 @@
 		C1044EF421E596E800BA6A04 /* RTBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTBaseNavigationController.swift; sourceTree = "<group>"; };
 		C1044EFB21E5C88000BA6A04 /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1044EFD21E5D0A500BA6A04 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		C1044EFF21E5E19B00BA6A04 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C1044F0221E5E23400BA6A04 /* RTOSS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTOSS-Bridging-Header.h"; sourceTree = "<group>"; };
+		C1044F0321E5E23500BA6A04 /* UIView+ESTap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ESTap.h"; sourceTree = "<group>"; };
+		C1044F0421E5E23500BA6A04 /* UIView+ESTap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ESTap.m"; sourceTree = "<group>"; };
+		C1044F0621E5E87700BA6A04 /* MessageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailVC.swift; sourceTree = "<group>"; };
 		C19FCC8321E49D7D0010C1AB /* RTOSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTOSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19FCC8B21E49D7D0010C1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C19FCC8D21E49D800010C1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				C1044EF021E58E9000BA6A04 /* MessageVC.swift */,
+				C1044F0621E5E87700BA6A04 /* MessageDetailVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +196,24 @@
 				C1044EFB21E5C88000BA6A04 /* MessageCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C1044F0021E5E22100BA6A04 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C1044F0121E5E22100BA6A04 /* OC */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C1044F0121E5E22100BA6A04 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				C1044F0321E5E23500BA6A04 /* UIView+ESTap.h */,
+				C1044F0421E5E23500BA6A04 /* UIView+ESTap.m */,
+				C1044F0221E5E23400BA6A04 /* RTOSS-Bridging-Header.h */,
+			);
+			path = OC;
 			sourceTree = "<group>";
 		};
 		C19FCC7A21E49D7D0010C1AB = {
@@ -224,6 +250,7 @@
 				C19FCC8D21E49D800010C1AB /* Assets.xcassets */,
 				C19FCC8F21E49D800010C1AB /* LaunchScreen.storyboard */,
 				C19FCC9221E49D800010C1AB /* Info.plist */,
+				C1044EFF21E5E19B00BA6A04 /* PrefixHeader.pch */,
 			);
 			path = RTOSS;
 			sourceTree = "<group>";
@@ -249,6 +276,7 @@
 		C19FCCB421E49E470010C1AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C1044F0021E5E22100BA6A04 /* Tools */,
 				C19FCCB521E49E470010C1AB /* RTAppMacroRequest.swift */,
 				C19FCCB621E49E470010C1AB /* AppConfig.swift */,
 				C19FCCB721E49E470010C1AB /* AppMacro.swift */,
@@ -446,6 +474,7 @@
 				TargetAttributes = {
 					C19FCC8221E49D7D0010C1AB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					C19FCC9621E49D800010C1AB = {
 						CreatedOnToolsVersion = 10.1;
@@ -584,7 +613,9 @@
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -603,7 +634,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -632,7 +665,9 @@
 				C19FCCD321E49E480010C1AB /* RxAlamofireObjectMapper.swift in Sources */,
 				C1044EF521E596E800BA6A04 /* RTBaseNavigationController.swift in Sources */,
 				C19FCCD821E49E480010C1AB /* HomeVC.swift in Sources */,
+				C1044F0521E5E23500BA6A04 /* UIView+ESTap.m in Sources */,
 				C1044EFC21E5C88000BA6A04 /* MessageCollectionViewCell.swift in Sources */,
+				C1044F0721E5E87700BA6A04 /* MessageDetailVC.swift in Sources */,
 				C19FCCD621E49E480010C1AB /* RTTabController.swift in Sources */,
 				C19FCCCF21E49E480010C1AB /* RTAppMacroRequest.swift in Sources */,
 				C19FCCD721E49E480010C1AB /* AppDelegate.swift in Sources */,
@@ -822,8 +857,11 @@
 			baseConfigurationReference = 4D1B71984073905AB5F4E3B0 /* Pods-RTOSS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FT576V2RPV;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = $SRCROOT/RTOSS/PrefixHeader.pch;
 				INFOPLIST_FILE = RTOSS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -832,6 +870,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.isoftstone.RTOSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RTOSS/Common/Tools/OC/RTOSS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -842,8 +882,11 @@
 			baseConfigurationReference = 40D7F544AEB6C829F681470B /* Pods-RTOSS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FT576V2RPV;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = $SRCROOT/RTOSS/PrefixHeader.pch;
 				INFOPLIST_FILE = RTOSS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -852,6 +895,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.isoftstone.RTOSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RTOSS/Common/Tools/OC/RTOSS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -36,7 +36,7 @@ class MessageCollectionViewCell: UICollectionViewCell {
     
     let contentLB : UILabel = {
         let label = UILabel()
-        label.font = kAppFont(fontName: .regular, fontSize: 13)
+        label.font = kAppFont(fontName: .regular, fontSize: 12)
         label.textColor = UIColor(hex: "666666")
         label.text = "通知标题通知内容之类的东西通知标题通知内容之类的东西通知标题通知内容之类的东西"
         label.numberOfLines = 0
@@ -114,8 +114,8 @@ extension MessageCollectionViewCell {
         
         contentLB.snp.updateConstraints { (make) in
             make.left.equalTo(titleLB.snp.left)
-            make.top.equalTo(timeLB.snp.bottom).offset(15)
-            make.height.equalTo(32)
+            make.top.equalTo(timeLB.snp.bottom).offset(12)
+            make.height.equalTo(35)
             make.width.equalTo(titleLB.snp.width)
         }
         

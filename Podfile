@@ -5,6 +5,7 @@ target 'RTOSS' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+#Swift
 pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'ObjectMapper'
@@ -17,6 +18,11 @@ pod 'SnapKit'
 pod 'Hue'
 pod 'Kingfisher'
 pod 'SwiftDate'
+
+#Object-c
+pod 'Masonry'
+pod 'ReactiveObjC'
+
 
  # Pods for RTOSS
 
